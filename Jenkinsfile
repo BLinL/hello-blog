@@ -7,6 +7,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'gradle -v'
+                sh 'gradle clean bootJar'
             }
         }
     }
