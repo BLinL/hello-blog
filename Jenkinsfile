@@ -13,7 +13,7 @@ pipeline {
 
         stage('start') {
             steps {
-                sh 'java -jar hello-blog-0.0.1-SNAPSHOT.jar'
+                sh 'java -jar ./build/libs/hello-blog-0.0.1-SNAPSHOT.jar'
             }
         }
     }
