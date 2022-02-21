@@ -1,8 +1,8 @@
 pipeline {
-    agent any
-    tools {
-        gradle "sys gradle"
+    agent {
+        docker { image 'gradle:jdk8' }
     }
+
     stages {
         stage('build') {
             steps {
