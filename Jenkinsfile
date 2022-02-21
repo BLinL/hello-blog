@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        gradle "gradle-7.4"
+    }
     stages {
         stage('build') {
             steps {
