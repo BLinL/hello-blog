@@ -10,6 +10,12 @@ pipeline {
                 sh 'gradle clean bootJar'
             }
         }
+
+        stage('start') {
+            steps {
+                sh 'java -jar hello-blog-0.0.1-SNAPSHOT.jar'
+            }
+        }
     }
 
     post {
