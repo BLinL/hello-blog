@@ -3,7 +3,7 @@ pipline {
     stages {
         stage('build') {
             steps {
-                sh 'mvn -v'
+                sh 'gradle -v'
             }
         }
     }
